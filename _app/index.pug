@@ -25,7 +25,7 @@ mixin b(cl, href, p, target, id)
 		a.button(class=cl href!=href target=target id=id)=p
 mixin gt(cl, h3)
 	h3.general-title(class=cl)=h3
-mixin imgs(cl, src, alt)
+mixin img(cl, src, alt)
 	img(class=cl src=src alt=alt)
 
 doctype html
@@ -36,7 +36,6 @@ html(lang="ru")
 	body
 		include pug/scripts/body_top_scripts
 		.wrapper
-			+b('button-black', href, 'Принять участие')
 			include pug/main/1-main
 			include pug/main/2-about
 			include pug/main/3-info
