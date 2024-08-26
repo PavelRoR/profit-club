@@ -54,5 +54,32 @@ $(document).ready(function() {
     //     // }
     // ]
     });
+
+
+       /* Таймер */
+  var clock;
+  var futureDate = new Date("August 30, 2024 00:00 UTC+3");
+  var currentDate = new Date();
+  var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+  if (diff < 0) {
+      diff = 0;
+    //   $('#link').attr('href', 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1508&clean=true&lg=ru').text('Оплатить');
+    //   $('.cost-sale, .timer,.prepayment').remove();
+    //   $('.cost-full span').addClass('unbroken');
+  }
+
+  clock = $('.clock').FlipClock(diff, {
+      clockFace: 'HourlyCounter',
+      countdown: true,
+      language: 'ru',
+    //   callbacks: {
+    //       stop: function () {
+    //         $('#link').attr('href', 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1508&clean=true&lg=ru').text('Оплатить');
+    //         $('.cost-sale, .timer,.prepayment').remove();
+    //   $('.cost-full span').addClass('unbroken');
+    //       }
+    //   },
+  });
 /*Конец документа*/
 });
