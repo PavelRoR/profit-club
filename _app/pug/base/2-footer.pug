@@ -5,7 +5,7 @@ footer
 				+img('footer-img', 'img/images/logo-footer.svg', 'Логотип')
 		.row
 			.col-md-4
-				a.footer-link(href='' target='_blank')
+				a.footer-link.footer-link-rules(href='' target='_blank')
 					p Правила клуба
 		.row
 			.col-md-4
@@ -13,9 +13,12 @@ footer
 					p Оферта
 				a.footer-link(href='' target='_blank')
 					p Политика конфиденциальности
-				a.footer-link(href='' target='_blank')
+				a.footer-link.mob-none(href='mailto:profit-club@mvacademy.ru' target='_blank')
 					p E-mail: profit-club@mvacademy.ru
 			.col-md-5.col-md-offset-3
-				p ИП: Кудряшов Александр Анатольевич
-				p ИНН: 720410077658
-				p ОГРНИП: 315723200065100
+				.footer-text
+					p ИП: Кудряшов Александр Анатольевич
+					p ИНН: 720410077658
+					p ОГРНИП: 315723200065100
+		a.footer-link.footer-link-email.d-none(href='mailto:profit-club@mvacademy.ru' target='_blank')
+			p E-mail: profit-club@mvacademy.ru

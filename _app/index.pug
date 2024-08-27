@@ -7,6 +7,7 @@
 //-var fav_app = path+'favicon.svg';
 -var fav_ico = path+'favicon.ico';
 -var fav_png = path+'favicon.png';
+-var libs = path+'js/libs.min.js';
 -var scripts = path+'js/scripts.min.js';
 -var noref = true;
 //- -var action = '';
@@ -22,11 +23,11 @@
 
 mixin b(cl, href, p, target, id)
 	.button-wrapper
-		a.button(class=cl href!=href target=target id=id)=p
+		a.button(class=cl href!=href target=target id=id)!=p
 mixin gt(cl, h3)
-	h3.general-title(class=cl)=h3
+	h3.general-title(class=cl)!=h3
 mixin img(cl, src, alt)
-	img(class=cl src=src alt=alt)
+	img(class=cl src!=src alt!=alt)
 
 doctype html
 html(lang="ru")
@@ -46,5 +47,7 @@ html(lang="ru")
 			include pug/main/8-price
 		include pug/base/2-footer
 		include pug/base/3-scripts
+		//- <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
+		//- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 		//- include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts
