@@ -697,7 +697,7 @@ footer {
   background-size: cover;
 }
 .main-content {
-  padding: 20px 0 30px;
+  padding: 20px 0 50px;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -808,7 +808,6 @@ footer {
 @media screen and (max-width: 767px) {
   .main-sutitle {
     text-align: left;
-    margin: 40px 0 60px;
     font-size: 26px;
   }
 }
@@ -816,19 +815,6 @@ footer {
   .main-sutitle {
     font-size: 20px;
     margin: 20px 0 30px;
-  }
-}
-.button-main {
-  margin-top: 40px;
-}
-@media screen and (max-width: 1199px) {
-  .button-main {
-    margin-top: 60px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .button-main {
-    margin-top: 30px;
   }
 }
 @media screen and (max-width: 560px) {
@@ -909,16 +895,16 @@ footer {
 .info-text span {
   font-weight: bold;
 }
-#schedule {
+.schedule {
   padding: 80px 0;
 }
 @media screen and (max-width: 767px) {
-  #schedule {
+  .schedule {
     padding: 60px 0;
   }
 }
 @media screen and (max-width: 560px) {
-  #schedule {
+  .schedule {
     padding: 40px 0;
   }
 }

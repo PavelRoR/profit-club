@@ -2,5 +2,9 @@ section#prices
 	.container
 		h3.prices-title Вход в Клуб закроется через
 		.clock
-		+b('mob-none button-black', href, 'Принять участие')
-		+b('d-none button-black', href, 'Я с&nbsp;вами!')
+		.button-wrapper
+			a.button(class='mob-none button-black' href='#!' onclick="awoOpenFormModal(31)") Принять участие
+		.button-wrapper
+			a.button(class='d-none button-black' href='#!' onclick="awoOpenFormModal(31)") Я с&nbsp;вами!
+		//- +b('mob-none button-black', href, 'Принять участие')
+		//- +b('d-none button-black', href, 'Я с&nbsp;вами!')

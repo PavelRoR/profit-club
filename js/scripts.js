@@ -145,7 +145,7 @@ $(document).ready(function() {
 
        /* Таймер */
   var clock;
-  var futureDate = new Date("August 3, 2024 00:00 UTC+3");
+  var futureDate = new Date("September 7, 2024 23:59 UTC+3");
   var currentDate = new Date();
   var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
